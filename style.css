@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+h1 {
+    background-color: rgb(16, 130, 196);
+    border: solid 2px red;
+    margin: 0;
+    border: 0;
+    height: 50px;
+    padding: 20px;
+}
+
+h2 {
+    background-color:gray;
+    border: solid 2px red;
+    margin: 0;
+    border: 0;
+    height: 35px;
+}
+
+main {
+    background-color: grey;
+    border: double black 2px;
+    height: 400px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+footer {
+    background-color: silver;
+    height: 180px;
+}
