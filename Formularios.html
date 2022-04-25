@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-form.css">
+    <title>Formulário</title>
+
+</head>
+<!--
+    A tag fieldset serve para fazer:
+    - agrupamentos de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+
+    O atributo disabled dentro da tag fieldset desabilita todo o formulário. 
+-->
+<body>
+    <form action="">
+        <fieldset>
+            <button style="color: red;">Enviar</button>
+            <legend>
+                Contatos:
+            </legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+    </form>
+
+    <!--
+        A tag <label> tem por finalidade associar uma ou mais tag de entrada de dados. 
+    -->
+    <label for="Nome"> Nome Completo:
+        <input id="Nome" type="text">
+    </label>
+    <!--
+        A tag <button> tem por finalidade criar um botão de para interação com o usuário.
+            - É muito usado para enviar formulários. 
+            É estilizado pelo user agents.
+        - quando a tag button estiver dentro de um formulário use o atributo type="submit", esse elemento vai fazer o formulário ser enviado. 
+        - Também permite o atributo disabled para desabilitar o botção.
+    -->
+    <form action="">
+        <input type="text" value="">
+        <button  type="reset" autofocus>
+           Limpar
+        </button>
+        
+        <!--
+            A tag <datalist> pode ser ligada a uma lista pelo atributo id="listadefrutas"
+        -->
+        <input type="text"
+        list="fruitsdata"
+        placeholder="Escolha uma fruta:">
+
+        <datalist id="fruitsdata">
+            <option>Maçã</option>
+            <option>Banana</option>
+            <option>Pera</option>
+            <option>Maracujá</option>
+            <option>Morango</option>
+
+        </datalist>
+        
+        <datalist id="colorsdata">
+            <option>#ff0044</option>
+            <option>#00ff00</option>
+        </datalist>
+        <input type="color" list="fruitsdata">
+
+    </form>
+</body>
+</html>
